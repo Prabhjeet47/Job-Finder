@@ -1,0 +1,118 @@
+.form {
+  --width-of-input: 300px;
+  --border-height: 2px; /* Adjusted for consistency */
+  --border-before-color: rgb(135, 135, 135);
+  --border-after-color: #1663fe;
+  --input-hovered-color: #d6e4f9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: var(--width-of-input);
+}
+
+/* Styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 5px; /* Standardized padding */
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  position: relative;
+  appearance: none; /* Remove default styling */
+}
+
+/* Styling of animated border */
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: var(--border-height);
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+/* Hover on Input */
+.input:hover {
+  background: var(--input-hovered-color);
+}
+
+.input:focus {
+  outline: none;
+}
+
+/* Animated border on focus */
+.input:focus ~ .input-border {
+  width: 100%;
+}
+
+/* Additional styles */
+.form .input-container {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.avatarPart {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  align-self: flex-start;
+  margin-top: 17px;
+}
+
+#avatarUserProfile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#uploadCv {
+  width: 100px;
+  height: auto;
+}
+
+.userProfileContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#addorupdatedetails{
+  margin: 0px;
+  font-size: 14px;
+}
+
+.avatarBtnContainer{
+  margin-top: 5px;
+}
+
+
+.signOutBtnGlobalUser{
+  padding: 10px;
+  color: #9c83c5;
+  font-family: "CustomFont";
+  border: solid 2px black;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  border-radius: 5px;
+}
+
+.signOutBtnGlobalUser:hover{
+  background-color: #9c83c5;  
+  color: black;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: solid 2px #9c83c5;
+}

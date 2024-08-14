@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../fonts/static/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jobCardContainer{
+    display: inline-flex;
+    align-content: center;
+    cursor: pointer;
+}
+
+.jobCardContainer:hover{
+    transform: translateY(10px);
+    transition: all 0.35s ease;
+}
+
+.jobCard{
+    margin: 5px;
+    max-width: 260px;
+    min-height: 270px;
+    background-color: #2f515b87;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.jobOverview{
+    padding-left: 8px;
+    
+    >p{
+        font-family: 'CustomFont';
+        position: relative;
+        top: -3px;
+    }
+}
+
+#jobImg{
+    width: 100%;
+    padding: 8px;
+    position: relative;
+    right: -2px;
+}
+
+.jobDetailContainer{
+    display: inline-flex;
+    border: solid 3px #2f515b;
+    background-color: rgb(194, 190, 190);
+    width: 65vw;
+    min-height: 50vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    left: 290px;
+    top: 60px;
+
+    >div{
+        margin: 10px 0px 10px 0px;
+        font-family: 'CustomFont';
+    }
+    >button{
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+.jobDetailLeft{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.backBtn{
+    border: none;
+    cursor: pointer;
+    border: solid 3px #4b7a8a;
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    font-family: 'CustomFont';
+    align-self: flex-end;
+    position: relative;
+    bottom: 10px;
+    margin-right: 6px;
+}
+
+.backBtn:hover{
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: #4b7a8a;
+
+}
+
+.jobDetailRight{
+    position: relative;
+    top: 42px;
+
+    >p{
+        margin-bottom: 4px;
+    }
+}
+
+#pleaseloginasauser{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 38vh;
+}
+
+.jobCardBtnContainer{
+    display: flex;
+    align-self: flex-end;
+}
+
+#submitCvBtn{
+    border: solid 3px green;
+}
+
+#submitCvBtn:hover{
+    background-color: green;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

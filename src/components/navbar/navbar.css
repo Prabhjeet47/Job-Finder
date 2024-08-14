@@ -1,0 +1,57 @@
+.navbarContainer{
+    display: flex;
+    background-color: #2f515b;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+}
+
+.navbarItem{
+    padding: 0px 5px 0px 5px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.loginItem{
+    padding: 3px;
+    cursor: pointer;
+}
+
+#avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+}
+
+#mylogo{
+    width: 140px;
+    height: 100%;
+}
+
+.n1n1{
+    /* border: solid 2px red; */
+    padding: 5px;
+    padding: 10px;
+    font-family: "CustomFont";
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+}
+
+.signOutBtnGlobal{
+    padding: 5px;
+    border: solid 2px #2f515b;
+    background-color: transparent;
+    color: black;
+    font-family: "CustomFont";
+    margin-left: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+

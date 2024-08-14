@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../fonts/static/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #f2c532;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    left: 100px;
+    top: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 70px;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.home1tagline{
+    width: auto;
+    position: relative;
+    left: 85px;
+    top: 65px;
+    overflow: hidden;
+    color: #f2c532;
+    font-family: 'CustomFont';
+    font-size: 18px;
+}
+
+.home1{
+    background-color: #2f515b;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home2{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f2c532;
+}
+
+#h2img{
+    height: 400px;
+    width: 430px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 30px;
+}
+
+#h1img{
+    height: 400px;
+    position: relative;
+    left: 790px;
+    bottom: 21px;
+    overflow: hidden;
+}
+
+
+.home2tagline{
+    font-family: 'CustomFont';
+    font-size: 28px;
+    position: relative;   
+    left: 385px;
+    top: 85px;
+}
+
+#findJobsh2Btn{
+    padding: 4px;
+    font-family: "CustomFont";
+    background-color: transparent;
+    border: solid 2px #538696;
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    font-size: large;
+    position: relative;
+    top: 140px;
+    left: 150px;
+}
+
+#findJobsh2Btn:hover{
+    background-color: #538696;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
